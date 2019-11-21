@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: postgresql-tools
+  labels:
+    app: postgresql-tools
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: postgresql-tools
+  template:
+    metadata:
+      labels:
+        app: postgresql-tools
+    spec:
+      containers:
+      - name: postgresql-tools
+        image: primedorito/postgresql_tools:latest
