@@ -5,7 +5,7 @@ Postgresql client tooling intended to be used via exec-ing into k8s-hosted conta
 To deploy this container you can:
 
 ```
-kubectl -n <namespace> apply -f https://raw.githubusercontent.com/misterdorito/postgresql_tools/master/yml/pg_tools.yml
+kubectl -n <namespace> apply -f https://raw.githubusercontent.com/misterdorito/postgresql_tools/master/k8s/pg_tools.yml
 ```
 
 ## Using container to query a Postgresql DB:
