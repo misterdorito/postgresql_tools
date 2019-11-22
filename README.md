@@ -9,10 +9,18 @@ kubectl -n <namespace> apply -f https://raw.githubusercontent.com/misterdorito/p
 ```
 
 ## Using container to query a Postgresql DB:
+To query a db:
 
 ```
 kubectl -n <namespace> get pods                    (note your postgresql-tools pod name)
 kubectl exec -n <namespace> exec -i -t <pod-name> -- /bin/bash
 
 psql -h <db hostname> -d <db name> -p <db port number> -U <postgresql user>
+```
+
+## To undeploy container
+To remove the container once you're done with it:
+
+```
+kubectl -n <namespace> delete deployment postgresql-tools
 ```
