@@ -1,7 +1,7 @@
 # postgresql_tools
 Postgresql client tooling intended to be used via exec-ing into k8s-hosted container.  Everything below assumes that you have kubectl and a valid kube config.  This is intended to be used for debugging purposes. 
 
-Docker image available at [https://hub.docker.com/repository/docker/primedorito/postgresql_tools] (https://hub.docker.com/repository/docker/primedorito/postgresql_tools)
+Docker image available at https://hub.docker.com/repository/docker/primedorito/postgresql_tools.
 
 ## Deploying container to a k8s cluster
 To deploy this container you can:
