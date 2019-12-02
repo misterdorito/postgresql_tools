@@ -12,6 +12,6 @@ RUN echo "deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main" > /etc/
 
 RUN apt-get update
 
-RUN apt-get install -y postgresql-client:${pg_version}
+RUN apt-get install -y postgresql-client-${pg_version}
 
 ENTRYPOINT ["tail", "-f", "/dev/null"]
