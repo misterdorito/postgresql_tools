@@ -16,4 +16,4 @@ spec:
     spec:
       containers:
       - name: postgresql-tools
-        image: primedorito/postgresql_tools:latest
+        image: primedorito/postgresql_tools:9.4
