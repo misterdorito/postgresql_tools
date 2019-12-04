@@ -9,7 +9,7 @@ To deploy this container you can:
 ```
 kubectl -n <namespace> apply -f https://raw.githubusercontent.com/misterdorito/postgresql_tools/master/k8s/pg_tools_[version].yml
 ```
-[version] should be replaced with 94, 96, 11, or 12 for PostgreSQL versions 9.4, 9.6, 11 and 12 respectively.
+[version] should be replaced with 94, 95, 96, 11, or 12 for PostgreSQL versions 9.4, 9.5, 9.6, 11 and 12 respectively.
 
 ## Using container to query a Postgresql DB:
 To query a db:
