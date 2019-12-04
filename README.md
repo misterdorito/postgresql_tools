@@ -35,4 +35,4 @@ kubectl -n <namespace> delete deployment postgresql-tools
 ```
 
 ## To deploy this container via helm
-To deploy this container via helm, check out https://hub.docker.com/repository/docker/primedorito/postgresql_tools_chart .
+To deploy this container via helm, check out https://github.com/misterdorito/postgresql_tools_chart .
