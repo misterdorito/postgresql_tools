@@ -16,7 +16,7 @@ To query a db:
 
 ```
 kubectl -n <namespace> get pods                    (note your postgresql-tools pod name)
-kubectl exec -n <namespace> exec -i -t <pod-name> -- /bin/bash
+kubectl -n <namespace> exec -i -t <pod-name> -- /bin/bash
 
 psql -h <db hostname> -d <db name> -p <db port number> -U <postgresql user>
 ```
