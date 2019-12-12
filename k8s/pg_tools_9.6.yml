@@ -20,10 +20,10 @@ spec:
           volumeMounts:
             - mountPath: /data
               name: datadir
-    volumes:
-      - name: datadir
-        persistentVolumeClaim:
-          claimName: datadir
+      volumes:
+        - name: datadir
+          persistentVolumeClaim:
+            claimName: datadir
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
