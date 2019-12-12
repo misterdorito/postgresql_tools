@@ -15,12 +15,15 @@ spec:
         app: postgresql-tools
     spec:
       containers:
-      - name: postgresql-tools
-        image: primedorito/postgresql_tools:9.4
-      volumes:
-        - name: datadir
-          persistentVolumeClaim:
-            claimName: datadir
+        - name: postgresql-tools
+          image: primedorito/postgresql_tools:9.4
+      volumeMounts:
+        - mountPath: /data
+          name: datadir
+    volumes:
+      - name: datadir
+        persistentVolumeClaim:
+          claimName: datadir
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
