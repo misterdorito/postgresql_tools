@@ -26,6 +26,9 @@ If you need to copy an large files to the container:
 kubectl cp <local path> <namespace>/<pod name>:/data/<destination filename>
 ```
 
+## Special note on using pg_dump
+If you find that pg_dump is unexpectedly ending, it may be exceeding available memory. You should increase the memory available to the pod.
+
 ## Special note on using pg_repack
 These docker images contain pg_repack. While installing pg_repack it installs tzdata as a dependency.  tzdata requires you to specify a default time zone.  By default this is set to "America/New_York". To change the default timezone to the one used by your db, run the following command from within the container and follow the prompts:
 ```

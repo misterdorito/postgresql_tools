@@ -17,6 +17,13 @@ spec:
       containers:
         - name: postgresql-tools
           image: primedorito/postgresql_tools:9.4
+          resources:
+            limits:
+              cpu: 1
+              memory: 4Gi
+            requests:
+              cpu: 1
+              memory: 3Gi
           volumeMounts:
             - mountPath: /data
               name: datadir
