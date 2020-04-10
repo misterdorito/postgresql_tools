@@ -19,4 +19,6 @@ RUN dpkg-reconfigure --frontend noninteractive tzdata
 
 RUN apt-get install -y postgresql-${pg_version}-repack
 
+RUN apt install -y default-jre
+
 ENTRYPOINT ["tail", "-f", "/dev/null"]
